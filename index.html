@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Maroc & France -->
+    <title>Formation Cybersécurité Maroc & Certification ISO 27001 France | SecureValley</title>
+    <meta name="description" content="Boostez votre carrière avec SecureValley. Centre d'excellence proposant des formations certifiantes en cybersécurité au Maroc et en France : CEH, ISO 27001, Fortinet, Palo Alto.">
+    <meta name="keywords" content="formation cybersécurité Maroc, certification ISO 27001 France, CEH Maroc, PECB formation, ethical hacking Maroc, formation sécurité réseau Rabat, cybersécurité Temara, CISM formation, ISO 27001 Maroc, Fortinet NSE, Palo Alto certification">
+    <meta name="author" content="SecureValley Training Center">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.securevalley-training.net/">
+    
+    <!-- Geo Tags SEO -->
+    <meta name="geo.region" content="MA-07">
+    <meta name="geo.placename" content="Temara, Maroc">
+    <meta name="geo.position" content="33.9216;-6.9094">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="SecureValley Training Center | Formation Cybersécurité Maroc & Certification ISO 27001">
+    <meta property="og:description" content="Leader de la formation cybersécurité certifiante au Maroc et en France. EC-Council, PECB, Fortinet, Palo Alto, F5. +20 certifications reconnues mondialement.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.securevalley-training.net/">
+    <meta property="og:locale" content="fr_MA">
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "SecureValley Training Center",
+      "description": "Centre de formation certifiante en cybersécurité, ISO, cloud et intelligence artificielle au Maroc et en France.",
+      "url": "https://www.securevalley-training.net/",
+      "telephone": "+212645066933",
+      "email": "training@securevalley.net",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Wifaq, IMM 1316",
+        "addressLocality": "Temara",
+        "addressCountry": "MA"
+      },
+      "areaServed": ["MA", "FR"],
+      "courseMode": ["onsite", "online"]
+    }
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Outfit:wght@500;700;900&display=swap" rel="stylesheet">
+    <style>
+        /* ===== HERO ENHANCED ===== */
+        .hero { min-height: 100vh; display: flex; align-items: center; background: var(--c-black); position: relative; overflow: hidden; padding-top: 80px; }
+        .hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 80% 60% at 70% 50%, rgba(55,134,212,0.12) 0%, transparent 70%), radial-gradient(ellipse 50% 40% at 20% 80%, rgba(74,92,117,0.1) 0%, transparent 60%); pointer-events: none; }
+        .hero-bg-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.07; z-index: 0; }
+        .hero-container { position: relative; z-index: 1; display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; padding: 2rem; margin-top: -60px; }
+        .hero-content { max-width: 580px; }
+        .badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(55,134,212,0.12); border: 1px solid rgba(55,134,212,0.35); color: var(--c-green); padding: 0.5rem 1.2rem; border-radius: 50px; font-size: 0.85rem; font-weight: 600; letter-spacing: 0.5px; margin-bottom: 1rem; }
+        .badge::before { content: ''; width: 8px; height: 8px; border-radius: 50%; background: var(--c-green); animation: pulse-dot 2s infinite; }
+        @keyframes pulse-dot { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.5;transform:scale(1.4)} }
+        .hero-title { font-size: 3.4rem; font-weight: 900; line-height: 1.1; margin-bottom: 1rem; }
+        .hero-description { font-size: 1rem; color: var(--c-muted); margin-bottom: 1.8rem; max-width: 480px; line-height: 1.6; }
+        .hero-buttons { display: flex; gap: 1rem; flex-wrap: wrap; }
+        .hero-stats { display: flex; gap: 2rem; margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.07); }
+        .hero-stat strong { display: block; font-size: 1.6rem; font-weight: 900; color: var(--c-green); font-family: var(--font-heading); }
+        .hero-stat span { font-size: 0.8rem; color: var(--c-muted); }
+        .hero-visual { position: relative; display: flex; justify-content: center; align-items: center; z-index: 2; perspective: 1000px; margin-top: -30px; }
+        .hero-img-wrapper { position: relative; display: flex; align-items: center; justify-content: center; }
+        .glow-effect { position: absolute; width: 110%; height: 110%; background: radial-gradient(circle, rgba(55,134,212,0.2) 0%, transparent 60%); z-index: -1; animation: pulse-glow 4s infinite alternate; }
+        @keyframes pulse-glow { 0% { transform: scale(1); opacity: 0.8; } 100% { transform: scale(1.05); opacity: 1; } }
+        .hero-img { width: 100%; max-width: 400px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 30px 80px rgba(0,0,0,0.6), 0 0 60px rgba(55,134,212,0.15); transition: transform 0.5s ease; animation: float-image 6s ease-in-out infinite; }
+        @keyframes float-image { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-15px); } }
+        
+        .hero-floating-card { display: flex; align-items: center; gap: 12px; position: absolute; background: rgba(10,31,68,0.7); border: 1px solid rgba(255,255,255,0.12); border-radius: 16px; padding: 0.8rem 1.2rem; backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); box-shadow: 0 15px 35px rgba(0,0,0,0.3); font-size: 0.9rem; font-weight: 700; color: #fff; animation: float-card 4s ease-in-out infinite; transition: transform 0.3s; cursor: default; }
+        .hero-floating-card:hover { transform: translateY(-5px) scale(1.05) !important; background: rgba(15,40,90,0.85); border-color: rgba(55,134,212,0.5); }
+        .fc-icon { width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; border-radius: 10px; font-size: 1.1rem; }
+        @keyframes float-card { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+        
+        .hero-fc1 { top: 12%; left: -40px; animation-delay: 0s; }
+        .hero-fc2 { bottom: 20%; right: -30px; animation-delay: 1.5s; }
+        .hero-fc3 { top: 55%; left: -60px; animation-delay: 3s; }
+
+        /* ===== PROVIDERS LOGOS BAR ===== */
+        .providers-bar { background: rgba(255,255,255,0.02); border-top: 1px solid rgba(255,255,255,0.05); border-bottom: 1px solid rgba(255,255,255,0.05); padding: 2rem 0; }
+        .providers-label { text-align: center; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: var(--c-muted); margin-bottom: 1.5rem; }
+        .providers-logos { display: flex; justify-content: center; align-items: center; gap: 3rem; flex-wrap: wrap; }
+        .provider-pill { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 0.6rem 1.4rem; font-family: var(--font-heading); font-weight: 700; font-size: 0.9rem; color: var(--c-off-white); transition: all 0.3s; cursor: default; }
+        .provider-pill:hover { border-color: var(--c-green); color: var(--c-green); background: rgba(55,134,212,0.08); }
+
+        /* ===== ABOUT ===== */
+        .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
+        .about-img-wrap { position: relative; padding-left: 1.5rem; padding-bottom: 1.5rem; }
+        .about-img { width: 100%; max-width: 90%; border-radius: 16px; border: 1px solid rgba(55,134,212,0.2); display: block; margin-left: auto; box-shadow: 0 20px 40px rgba(0,0,0,0.3); }
+        .about-img-secondary { position: absolute; bottom: 10%; left: 0; width: 45%; border-radius: 12px; border: 6px solid var(--c-black); box-shadow: 0 15px 30px rgba(0,0,0,0.5); z-index: 2; transition: transform 0.4s; }
+        .about-img-wrap:hover .about-img-secondary { transform: translateY(-10px) scale(1.05); }
+        .about-badge-float { position: absolute; bottom: 0; right: 0; background: var(--c-green); color: var(--c-black); padding: 1.5rem; border-radius: 12px; text-align: center; font-family: var(--font-heading); z-index: 3; box-shadow: 0 10px 25px rgba(55,134,212,0.2); }
+        .about-badge-float strong { display: block; font-size: 2.2rem; font-weight: 900; }
+        .about-badge-float span { font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
+        .about-text p { color: var(--c-muted); margin-bottom: 1.2rem; line-height: 1.8; }
+        .about-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 2.5rem; }
+        .stat-card { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07); border-radius: 12px; padding: 1.5rem; text-align: center; }
+        .stat-card strong { display: block; font-size: 2rem; font-weight: 900; color: var(--c-green); font-family: var(--font-heading); }
+        .stat-card span { font-size: 0.8rem; color: var(--c-muted); }
+
+        /* ===== TRAINING CARDS ===== */
+        .training { padding: 6rem 0; background: rgba(255,255,255,0.01); }
+        .tabs-wrapper { display: flex; justify-content: center; gap: 0.5rem; margin-bottom: 3rem; flex-wrap: wrap; }
+        .tab-btn { background: transparent; border: 1px solid rgba(255,255,255,0.1); color: var(--c-muted); padding: 0.6rem 1.4rem; border-radius: 50px; font-family: var(--font-heading); font-size: 0.9rem; font-weight: 600; cursor: pointer; transition: all 0.3s; }
+        .tab-btn.active, .tab-btn:hover { border-color: var(--c-green); color: var(--c-green); background: rgba(55,134,212,0.1); }
+        .provider-section { display: none; }
+        .provider-section.active { display: block; }
+        .provider-header { display: flex; align-items: center; gap: 1.5rem; margin-bottom: 2.5rem; padding: 2rem; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; }
+        .provider-logo-big { width: 60px; height: 60px; border-radius: 12px; background: var(--c-dark-gray); display: flex; align-items: center; justify-content: center; font-family: var(--font-heading); font-weight: 900; font-size: 0.85rem; color: var(--c-green); border: 1px solid rgba(55,134,212,0.3); flex-shrink: 0; }
+        .provider-info h3 { font-size: 1.4rem; margin-bottom: 0.3rem; }
+        .provider-info p { color: var(--c-muted); font-size: 0.9rem; }
+        .certs-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem; }
+        .cert-card { background: var(--c-dark-gray); border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; padding: 1.8rem; transition: all 0.3s; cursor: pointer; position: relative; overflow: hidden; }
+        .cert-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--c-green), transparent); transform: scaleX(0); transition: transform 0.3s; transform-origin: left; }
+        .cert-card:hover { border-color: rgba(55,134,212,0.3); transform: translateY(-4px); box-shadow: 0 20px 40px rgba(0,0,0,0.3); }
+        .cert-card:hover::before { transform: scaleX(1); }
+        .cert-level { display: inline-block; font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; padding: 0.25rem 0.75rem; border-radius: 50px; margin-bottom: 1rem; }
+        .level-foundation { background: rgba(74,222,128,0.1); color: #4ade80; border: 1px solid rgba(74,222,128,0.2); }
+        .level-intermediate { background: rgba(251,191,36,0.1); color: #fbbf24; border: 1px solid rgba(251,191,36,0.2); }
+        .level-advanced { background: rgba(239,68,68,0.1); color: #ef4444; border: 1px solid rgba(239,68,68,0.2); }
+        .level-expert { background: rgba(168,85,247,0.1); color: #a855f7; border: 1px solid rgba(168,85,247,0.2); }
+        .cert-card h4 { font-size: 1rem; margin-bottom: 0.5rem; }
+        .cert-card .cert-code { font-family: monospace; font-size: 0.8rem; color: var(--c-green); margin-bottom: 0.8rem; }
+        .cert-card p { font-size: 0.87rem; color: var(--c-muted); line-height: 1.6; }
+        .cert-card .cert-cta { display: inline-flex; align-items: center; gap: 6px; margin-top: 1.2rem; font-size: 0.85rem; font-weight: 600; color: var(--c-green); transition: gap 0.2s; }
+        .cert-card:hover .cert-cta { gap: 10px; }
+
+        /* ===== LEARNING PATH ===== */
+        .path-section { padding: 6rem 0; }
+        .path-steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 3rem; }
+        .path-step { text-align: center; padding: 2.5rem 2rem; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; position: relative; }
+        .path-step-num { width: 60px; height: 60px; border-radius: 50%; background: rgba(55,134,212,0.1); border: 2px solid var(--c-green); color: var(--c-green); font-size: 1.4rem; font-weight: 900; font-family: var(--font-heading); display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; }
+        .path-step h3 { margin-bottom: 0.8rem; font-size: 1.1rem; }
+        .path-step p { color: var(--c-muted); font-size: 0.9rem; line-height: 1.7; }
+        .path-connector { display: none; }
+
+        /* ===== WHY US ===== */
+        .whyus { background: rgba(255,255,255,0.01); padding: 6rem 0; }
+        .why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 3rem; }
+        .why-card { padding: 2.5rem; border-radius: 16px; border: 1px solid rgba(255,255,255,0.06); background: var(--c-dark-gray); transition: all 0.3s; }
+        .why-card:hover { border-color: rgba(55,134,212,0.3); transform: translateY(-4px); }
+        .why-icon { font-size: 2.5rem; margin-bottom: 1.2rem; }
+        .why-card h3 { font-size: 1.1rem; margin-bottom: 0.8rem; }
+        .why-card p { color: var(--c-muted); font-size: 0.9rem; line-height: 1.7; }
+
+        /* ===== CONTACT ===== */
+        .contact { padding: 6rem 0; }
+        .contact-grid { display: grid; grid-template-columns: 1fr 1.3fr; gap: 5rem; align-items: start; }
+        .contact-info h2 { font-size: 2.2rem; margin-bottom: 1rem; }
+        .contact-info > p { color: var(--c-muted); margin-bottom: 2.5rem; line-height: 1.8; }
+        .contact-item { display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1.5rem; }
+        .ci-icon { width: 44px; height: 44px; border-radius: 10px; background: rgba(55,134,212,0.1); border: 1px solid rgba(55,134,212,0.2); display: flex; align-items: center; justify-content: center; font-size: 1.1rem; flex-shrink: 0; }
+        .ci-label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; color: var(--c-muted); margin-bottom: 0.2rem; }
+        .ci-val { color: var(--c-off-white); font-size: 0.95rem; }
+        .ci-val a { color: var(--c-off-white); } .ci-val a:hover { color: var(--c-green); }
+        .whatsapp-btn { display: inline-flex; align-items: center; gap: 10px; background: #25d366; color: #fff; padding: 0.9rem 1.8rem; border-radius: 10px; font-weight: 700; font-family: var(--font-heading); margin-top: 1rem; transition: all 0.3s; }
+        .whatsapp-btn:hover { background: #1ebe5d; transform: translateY(-2px); color: #fff; box-shadow: 0 10px 25px rgba(37,211,102,0.3); }
+        .contact-form { background: var(--c-dark-gray); border: 1px solid rgba(255,255,255,0.07); border-radius: 16px; padding: 3rem; }
+        .form-group { margin-bottom: 1.5rem; }
+        .form-group label { display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 0.5rem; color: var(--c-off-white); }
+        .form-group input, .form-group textarea, .form-group select { width: 100%; background: var(--c-black); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; padding: 0.9rem 1rem; color: var(--c-white); font-family: var(--font-body); font-size: 0.95rem; transition: border-color 0.3s; }
+        .form-group input:focus, .form-group textarea:focus, .form-group select:focus { outline: none; border-color: var(--c-green); background: rgba(55,134,212,0.04); }
+        .form-group select option { background: var(--c-black); }
+        .form-group textarea { resize: vertical; min-height: 120px; }
+
+        /* ===== FOOTER ===== */
+        .footer { background: #020813; border-top: 1px solid rgba(255,255,255,0.05); padding: 3rem 0; }
+        .footer-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.5rem; }
+        .footer-links { display: flex; gap: 2rem; }
+        .footer-links a { color: var(--c-muted); font-size: 0.9rem; } .footer-links a:hover { color: var(--c-white); }
+        .footer-copy { color: rgba(255,255,255,0.25); font-size: 0.8rem; }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 992px) {
+            .hero-container, .about-grid, .contact-grid { grid-template-columns: 1fr; }
+            .path-steps, .why-grid { grid-template-columns: 1fr 1fr; }
+            .hero-visual { display: none; }
+            .hero-title { font-size: 2.8rem; }
+            .about-badge-float { display: none; }
+            .about-stats { grid-template-columns: 1fr 1fr; }
+        }
+        @media (max-width: 768px) {
+            .hero-title { font-size: 2.2rem; }
+            .path-steps, .why-grid { grid-template-columns: 1fr; }
+            .certs-grid { grid-template-columns: 1fr; }
+            .hero-stats { flex-direction: column; gap: 1rem; }
+            .providers-logos { gap: 1rem; }
+            .footer-inner { flex-direction: column; text-align: center; }
+            .footer-links { flex-wrap: wrap; justify-content: center; }
+            .about-stats { grid-template-columns: 1fr; }
+            .tabs-wrapper { gap: 0.3rem; }
+            .tab-btn { font-size: 0.8rem; padding: 0.5rem 1rem; }
+        }
+        @media (max-width: 480px) {
+            .hero-title { font-size: 1.9rem; }
+        }
+
+        /* ===== ANIMATIONS ===== */
+        .fade-in-element, .slide-up-element { opacity: 0; transition: opacity 0.8s ease, transform 0.8s ease; }
+        .slide-up-element { transform: translateY(40px); }
+        .is-visible { opacity: 1 !important; transform: translateY(0) !important; }
+
+        /* ===== MENU TOGGLE ===== */
+        .menu-toggle { display: none; background: transparent; border: none; cursor: pointer; padding: 0.5rem; }
+        .hamburger { display: block; width: 24px; height: 2px; background: var(--c-white); position: relative; }
+        .hamburger::before, .hamburger::after { content: ''; position: absolute; width: 100%; height: 2px; background: var(--c-white); left: 0; transition: all 0.3s; }
+        .hamburger::before { top: -7px; }
+        .hamburger::after { bottom: -7px; }
+        @media (max-width: 768px) { .menu-toggle { display: block; } .nav-actions .btn-primary { display: none; } .nav-menu { position: fixed; top: 80px; left: -100%; width: 100%; height: calc(100vh - 80px); background: var(--c-black); flex-direction: column; justify-content: center; transition: left 0.3s; z-index: 100; } .nav-menu.active { left: 0; } .nav-list { flex-direction: column; text-align: center; font-size: 1.4rem; gap: 2rem; } }
+
+        /* CTA Banner */
+        .cta-banner { background: linear-gradient(135deg, rgba(55,134,212,0.15), rgba(74,92,117,0.1)); border: 1px solid rgba(55,134,212,0.2); border-radius: 20px; padding: 3.5rem; text-align: center; margin: 4rem 0 0; }
+        .cta-banner h3 { font-size: 2rem; margin-bottom: 1rem; }
+        .cta-banner p { color: var(--c-muted); margin-bottom: 2rem; max-width: 500px; margin-left: auto; margin-right: auto; }
+        .cta-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+
+        /* Navbar */
+        .navbar { position: fixed; top: 0; left: 0; width: 100%; height: 80px; background: rgba(5,10,22,0.92); backdrop-filter: blur(12px); z-index: 1000; border-bottom: 1px solid rgba(255,255,255,0.05); transition: all 0.3s; }
+        .navbar.scrolled { height: 70px; box-shadow: 0 5px 20px rgba(0,0,0,0.5); }
+        .nav-container { display: flex; justify-content: space-between; align-items: center; height: 100%; padding: 0 2rem; max-width: 1200px; margin: 0 auto; }
+        .nav-list { display: flex; gap: 2rem; list-style: none; }
+        .nav-link { color: var(--c-off-white); font-size: 0.95rem; font-weight: 500; position: relative; padding: 0.5rem 0; text-decoration: none; }
+        .nav-link::after { content: ''; position: absolute; width: 0; height: 2px; bottom: 0; left: 0; background: var(--c-green); transition: width 0.3s; }
+        .nav-link:hover::after, .nav-link.active::after { width: 100%; }
+        .nav-actions { display: flex; align-items: center; gap: 1rem; }
+        .has-dropdown { position: relative; }
+        .dropdown { position: absolute; top: 100%; left: 0; background: var(--c-darker-blue); min-width: 200px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); border-radius: 8px; padding: 1rem 0; opacity: 0; visibility: hidden; transform: translateY(10px); transition: all 0.3s; border: 1px solid rgba(255,255,255,0.05); list-style: none; }
+        .has-dropdown:hover .dropdown { opacity: 1; visibility: visible; transform: translateY(0); }
+        .dropdown a { display: block; padding: 0.8rem 1.5rem; color: var(--c-off-white); font-size: 0.9rem; text-decoration: none; transition: all 0.2s; }
+        .dropdown a:hover { background: rgba(55,134,212,0.1); color: var(--c-green); padding-left: 2rem; }
+        .btn { display: inline-flex; align-items: center; justify-content: center; padding: 0.8rem 1.8rem; border-radius: 8px; font-size: 1rem; font-family: var(--font-heading); font-weight: 600; cursor: pointer; transition: all 0.3s; text-decoration: none; border: 2px solid transparent; }
+        .btn-primary { background: var(--c-green); color: var(--c-black); box-shadow: 0 0 15px rgba(55,134,212,0.2); }
+        .btn-primary:hover { background: transparent; border-color: var(--c-green); color: var(--c-green); }
+        .btn-outline { background: transparent; border-color: rgba(255,255,255,0.3); color: var(--c-off-white); }
+        .btn-outline:hover { border-color: var(--c-green); color: var(--c-green); }
+        .logo { display: flex; align-items: center; text-decoration: none; }
+        .container { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+        section.section { padding: 6rem 0; }
+        .section-header { text-align: center; margin-bottom: 3.5rem; }
+        .section-header h2 { font-size: 2.5rem; }
+        .section-header .subtitle { color: var(--c-muted); margin-top: 0.8rem; font-size: 1.05rem; }
+        h1,h2,h3,h4,h5,h6 { font-family: var(--font-heading); color: var(--c-white); line-height: 1.2; margin-bottom: 1rem; }
+        .highlight-green { color: var(--c-green); }
+
+        /* Lang button */
+        #lang-toggle { padding: 0.5rem 1rem; border-radius: 8px; font-weight: 700; cursor: pointer; border: 1px solid rgba(255,255,255,0.2); background: transparent; color: var(--c-white); transition: 0.3s; font-family: var(--font-heading); font-size: 0.9rem; }
+        #lang-toggle:hover { border-color: var(--c-green); color: var(--c-green); }
+
+        /* Theme toggle */
+        #theme-toggle { position: fixed; bottom: 30px; right: 30px; width: 54px; height: 54px; border-radius: 50%; background: var(--c-dark-gray); border: 2px solid var(--c-green); color: var(--c-white); display: flex; align-items: center; justify-content: center; cursor: pointer; z-index: 1000; box-shadow: 0 4px 12px rgba(0,0,0,0.3); transition: all 0.3s; }
+        #theme-toggle:hover { transform: scale(1.1); }
+        .icon-sun { display: none; }
+        .icon-moon { display: block; }
+        [data-theme="light"] .icon-sun { display: block; }
+        [data-theme="light"] .icon-moon { display: none; }
+
+        /* Light Mode */
+        [data-theme="light"] { --c-black: #ffffff; --c-darker-blue: #f8fafc; --c-dark-blue: #ffffff; --c-dark-gray: #ffffff; --c-white: #0f172a; --c-off-white: #334155; --c-muted: #64748b; --c-green: #1a5fa8; --c-green-glow: rgba(26,95,168,0.15); --c-purple: #1a1e24; }
+        [data-theme="light"] .navbar { background: rgba(255,255,255,0.95); border-bottom: 1px solid rgba(0,0,0,0.05); }
+        [data-theme="light"] .navbar.scrolled { box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        [data-theme="light"] .nav-link { color: #1e293b; }
+        [data-theme="light"] .cert-card, [data-theme="light"] .why-card, [data-theme="light"] .contact-form { background: #fff; border-color: rgba(0,0,0,0.06); box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        [data-theme="light"] .form-group input, [data-theme="light"] .form-group textarea, [data-theme="light"] .form-group select { background: #f8fafc; border-color: #cbd5e1; color: #0f172a; }
+        [data-theme="light"] .form-group input:focus, [data-theme="light"] .form-group textarea:focus { background: #fff; }
+        [data-theme="light"] .footer { background: #f1f5f9; border-top-color: rgba(0,0,0,0.06); }
+        [data-theme="light"] .hero { background: linear-gradient(135deg, #f0f7ff, #e8f0fe); }
+        [data-theme="light"] .hero::before { opacity: 0.3; }
+        [data-theme="light"] .provider-header, [data-theme="light"] .path-step, [data-theme="light"] .stat-card { background: #f8fafc; border-color: rgba(0,0,0,0.06); }
+        [data-theme="light"] .training { background: #f1f5f9; }
+        [data-theme="light"] .whyus { background: #f8fafc; }
+        [data-theme="light"] .btn-primary { color: #fff !important; }
+    </style>
+</head>
+<body>
+
+<header class="navbar" id="header">
+    <div class="nav-container">
+        <a href="#" class="logo">
+            <svg viewBox="0 0 320 100" height="46" width="auto" xmlns="http://www.w3.org/2000/svg" style="overflow:visible">
+              <g transform="translate(160, 50)">
+                <path d="M -65 -22 A 70 70 0 0 1 42 -55" fill="none" stroke="var(--c-green)" stroke-width="10" stroke-linecap="butt"/>
+                <path d="M -48 -22 A 54 54 0 0 1 32 -42" fill="none" stroke="var(--c-purple,#4a5c75)" stroke-width="10" stroke-linecap="butt"/>
+                <g transform="rotate(180)">
+                  <path d="M -65 -22 A 70 70 0 0 1 42 -55" fill="none" stroke="var(--c-green)" stroke-width="10" stroke-linecap="butt"/>
+                  <path d="M -48 -22 A 54 54 0 0 1 32 -42" fill="none" stroke="var(--c-purple,#4a5c75)" stroke-width="10" stroke-linecap="butt"/>
+                </g>
+                <text x="0" y="9" font-family="'Arial Black', Impact, sans-serif" font-size="26" font-weight="900" fill="var(--c-green)" text-anchor="middle" letter-spacing="1">SECUREVALLEY</text>
+                <text x="0" y="24" font-family="Arial, sans-serif" font-size="9" font-weight="400" fill="var(--c-muted,#8892b0)" text-anchor="middle" letter-spacing="3">TRAINING CENTER</text>
+              </g>
+            </svg>
+        </a>
+        <nav class="nav-menu" id="nav-menu">
+            <ul class="nav-list">
+                <li><a href="#hero" class="nav-link" data-i18n="nav-home">Accueil</a></li>
+                <li><a href="#about" class="nav-link" data-i18n="nav-about">À Propos</a></li>
+                <li class="has-dropdown">
+                    <a href="#formations" class="nav-link" data-i18n="nav-certifications">Certifications ▾</a>
+                    <ul class="dropdown">
+                        <li><a href="#formations" onclick="switchTab('ecc')">EC-Council</a></li>
+                        <li><a href="#formations" onclick="switchTab('pecb')">PECB / ISO</a></li>
+                        <li><a href="#formations" onclick="switchTab('fortinet')">Fortinet</a></li>
+                        <li><a href="#formations" onclick="switchTab('palo')">Palo Alto Networks</a></li>
+                        <li><a href="#formations" onclick="switchTab('f5')">F5 Networks</a></li>
+                    </ul>
+                </li>
+                <li><a href="#path" class="nav-link" data-i18n="nav-path">Parcours</a></li>
+                <li><a href="#whyus" class="nav-link" data-i18n="nav-whyus">Pourquoi Nous</a></li>
+                <li><a href="#contact" class="nav-link" data-i18n="nav-contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="nav-actions">
+            <button id="lang-toggle" title="Switch language">FR</button>
+            <a href="#contact" class="btn btn-primary" data-i18n="nav-btn-enroll">S'inscrire</a>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Menu">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<main>
+<!-- ===== HERO ===== -->
+<section class="hero slide-up-element" id="hero">
+    <img src="bg.png" alt="" class="hero-bg-img" aria-hidden="true">
+    <div class="container hero-container">
+        <div class="hero-content">
+            <div class="badge" data-i18n="hero-badge">Formation Internationale en Cybersécurité</div>
+            <h1 class="hero-title" data-i18n="hero-title">
+                Votre Carrière d'Expert en<br><span class="highlight-green">Cybersécurité</span> Commence Ici
+            </h1>
+            <p class="hero-description" data-i18n="hero-desc">
+                Passez au niveau supérieur avec le centre de formation de référence. Obtenez des certifications internationales (CEH, ISO 27001, Fortinet) au Maroc et en France.
+            </p>
+            <div class="hero-buttons">
+                <a href="#formations" class="btn btn-primary" data-i18n="hero-btn-explore">S'inscrire</a>
+                <a href="#contact" class="btn btn-outline" data-i18n="hero-btn-start">Consultation gratuite</a>
+            </div>
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <strong>20+</strong>
+                    <span data-i18n="stat-years">Ans d'expérience</span>
+                </div>
+                <div class="hero-stat">
+                    <strong>50+</strong>
+                    <span data-i18n="stat-certs">Certifications officielles</span>
+                </div>
+                <div class="hero-stat">
+                    <strong>5</strong>
+                    <span data-i18n="stat-vendors">Éditeurs partenaires</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="hero-img-wrapper">
+                <div class="glow-effect"></div>
+                <img src="accueil.png" alt="Nos certifications clés" class="hero-img" loading="lazy">
+            </div>
+            
+            <div class="hero-floating-card hero-fc1">
+                <div class="fc-icon" style="background: rgba(74, 222, 128, 0.15); color: #4ade80;">✓</div>
+                <div class="fc-text">CEH Certified</div>
+            </div>
+            
+            <div class="hero-floating-card hero-fc2">
+                <div class="fc-icon" style="background: rgba(55, 134, 212, 0.15); color: var(--c-green);">🛡</div>
+                <div class="fc-text">ISO 27001 Lead Auditor</div>
+            </div>
+            
+            <div class="hero-floating-card hero-fc3">
+                <div class="fc-icon" style="background: rgba(245, 158, 11, 0.15); color: #f59e0b;">🔥</div>
+                <div class="fc-text">Fortinet NSE</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== PROVIDERS BAR ===== -->
+<div class="providers-bar">
+    <div class="container">
+        <p class="providers-label" data-i18n="providers-label">Nos partenaires officiels garantissent des certifications reconnues à l’international.</p>
+        <div class="providers-logos">
+            <div class="provider-pill">EC-Council</div>
+            <div class="provider-pill">PECB</div>
+            <div class="provider-pill">Fortinet</div>
+            <div class="provider-pill">Palo Alto Networks</div>
+            <div class="provider-pill">F5 Networks</div>
+        </div>
+    </div>
+</div>
+
+<!-- ===== ABOUT ===== -->
+<section class="section fade-in-element" id="about">
+    <div class="container">
+        <div class="about-grid">
+            <div class="about-img-wrap">
+                <img src="about.png" alt="SecureValley Training Center Temara Maroc " class="about-img" loading="lazy">
+                <img src="about2.png" alt=" Expert Cybersécurité" class="about-img-secondary" loading="lazy">
+                <div class="about-badge-float">
+                    <strong>20</strong>
+                    <span>ans d'expertise</span>
+                </div>
+            </div>
+            <div class="about-text">
+                <div class="badge" style="margin-bottom:1rem" data-i18n="about-badge">Notre Centre d'Expertise</div>
+                <h2 data-i18n="about-h2">L'Excellence de la Formation en Cybersécurité et Conformité ISO</h2>
+                <p data-i18n="about-p1"><strong>SecureValley Training Center</strong> est le leader incontesté de la <strong>formation cybersécurité au Maroc</strong> et un acteur reconnu en France. Avec plus de 20 ans d'expertise technique, nous formons l'élite de la sécurité informatique via une approche 100% pratique sur des cas réels.</p>
+                <p data-i18n="about-p2">Que vous cherchiez une <strong>formation en hacking éthique au Maroc</strong> (CEH, CPENT) ou une <strong>certification ISO 27001 en France</strong> (Lead Implementer, Auditor), nos instructeurs certifiés garantissent votre réussite et accélèrent votre évolution professionnelle.</p>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <strong>1000+</strong>
+                        <span data-i18n="stat1">Professionnels formés</span>
+                    </div>
+                    <div class="stat-card">
+                        <strong>95%</strong>
+                        <span data-i18n="stat2">Taux de réussite</span>
+                    </div>
+                    <div class="stat-card">
+                        <strong>MA·FR</strong>
+                        <span data-i18n="stat3">Présence régionale</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== TRAINING SECTION ===== -->
+<section class="training fade-in-element" id="formations">
+    <div class="container">
+        <div class="section-header">
+            <h2 data-i18n="train-h2">Nos Formations Certifiantes Officielles</h2>
+            <p class="subtitle" data-i18n="train-subtitle">Accédez aux certifications en cybersécurité les plus demandées sur le marché (Maroc & France)</p>
+        </div>
+
+        <div class="tabs-wrapper" role="tablist">
+            <button class="tab-btn active" onclick="switchTab('ecc')" data-i18n="tab-ecc">EC-Council</button>
+            <button class="tab-btn" onclick="switchTab('pecb')" data-i18n="tab-pecb">PECB / ISO</button>
+            <button class="tab-btn" onclick="switchTab('fortinet')" data-i18n="tab-fortinet">Fortinet</button>
+            <button class="tab-btn" onclick="switchTab('palo')" data-i18n="tab-palo">Palo Alto</button>
+            <button class="tab-btn" onclick="switchTab('f5')" data-i18n="tab-f5">F5 Networks</button>
+        </div>
+
+        <!-- EC-Council -->
+        <div class="provider-section active" id="tab-ecc">
+            <div class="provider-header">
+                <div class="provider-logo-big">EC-C</div>
+                <div class="provider-info">
+                    <h3>EC-Council — Sécurité Offensive & Leadership</h3>
+                    <p data-i18n="ecc-desc">Le leader mondial des certifications en hacking éthique, investigation numérique et cybersécurité opérationnelle. Reconnu dans 145 pays.</p>
+                </div>
+            </div>
+            <div class="certs-grid">
+                <div class="cert-card">
+                    <div style="margin-bottom:0.8rem;"><span style="background:rgba(239,68,68,0.1); color:#ef4444; border:1px solid rgba(239,68,68,0.3); font-size:0.75rem; font-weight:700; padding:4px 10px; border-radius:6px; display:inline-block;">🔥 Sessions ce mois-ci</span></div>
+                    <span class="cert-level level-intermediate">Intermédiaire</span>
+                    <div class="cert-code">CEH v13</div>
+                    <h4>Certified Ethical Hacker</h4>
+                    <p>Maîtrisez les techniques des hackers pour mieux défendre les systèmes. La certification la plus reconnue en pentest au monde.</p>
+                    <a href="#contact" class="cert-cta">S'inscrire <span>→</span></a>
+                </div>
+                <div class="cert-card">
+                    <span class="cert-level level-advanced">Avancé</span>
+                    <div class="cert-code">CPENT</div>
+                    <h4>Certified Penetration Testing Professional</h4>
+                    <p>Pentest avancé sur des environnements réels : Active Directory, IoT, OT/SCADA, cloud hybride.</p>
+                    <a href="#contact" class="cert-cta">S'inscrire <span>→</span></a>
+                </div>
+                <div class="cert-card">
+                    <span class="cert-level level-advanced">Avancé</span>
+                    <div class="cert-code">CHFI v11</div>
+                    <h4>Computer Hacking Forensic Investigator</h4>
+                    <p>Investigation numérique, analyse des preuves digitales, réponse aux incidents et forensics cloud.</p>
+                    <a href="#contact" class="cert-cta">S'inscrire <span>→</span></a>
+                </div>
+                <div class="cert-card">
+                    <span class="cert-level level-intermediate">Intermédiaire</span>
+                    <div class="cert-code">CND v3</div>
+                    <h4>Certified Network Defender</h4>
+                    <p>Défense du réseau, détection des intrusions, sécurité Zero Trust et protection des endpoints.</p>
+                    <a href="#contact" class="cert-cta">S'inscrire <span>→</span></a>
+                </div>
+                <div class="cert-card">
+                    <span class="cert-level level-advanced">Avancé</span>
+                    <div class="cert-code">CCSE</div>
+                    <h4>Certified Cloud Security Engineer</h4>
+                    <p>Sécurisation des environnements AWS, Azure et GCP. Architecture cloud sécurisée et conformité.</p>
+                    <a href="#contact" class="cert-cta">S'inscrire <span>→</span></a>
+                </div>
+                <div class="cert-card">
+                    <div style="margin-bottom:0.8rem;"><span style="background:rgba(239,68,68,0.1); color:#ef4444; border:1px solid rgba(239,68,68,0.3); font-size:0.75rem; font-weight:700; padding:4px 10px; border-radius:6px; display:inline-block;">⏳ Places limitées</span></div>
+                    <span class="cert-level level-expert">Expert</span>
+                    <div class="cert-code">CCISO</div>
+                    <h4>Certified Chief Information Security Officer</h4>
+                    <p>Leadership exécutif en cybersécurité : gouvernance, stratégie, gestion des risques et conformité réglementaire.</p>
+                    <a href="#contact" class="cert-cta">S'inscrire <span>→</span></a>
+                </div>
+            </div>
+            <div id="more-ecc" class="certs-grid" style="display: none; margin-top: 2rem;">
+                <div class="cert-card">
+                    <span class="cert-level level-expert">Expert</span>
+                    <div class="cert-code">LPT (Master)</div>
+                    <h4>Licensed Penetration Tester Master</h4>
+                    <p>Le sommet de l'expertise en pentest — examen pratique de 18h dans un environnement simulé live.</p>
+                    <a href="#contact" class="cert-cta">S'inscrire <span>→</span></a>
+                </div>
+                <div class="cert-card">
+                    <span class="cert-level level-advanced">Avancé</span>
+                    <div class="cert-code">ECSA v10</div>
+                    <h4>EC-Council Certified Security Analyst</h4>
+                    <p>Analyse de sécurité avancée, tests d'intrusion structurés et rédaction de rapports professionnels.</p>
+                    <a href="#contact" class="cert-cta">S'inscrire <span>→</span></a>
+                </div>
+                <div class="cert-card">
+                    <span class="cert-level level-intermediate">Intermédiaire</span>
+                    <div class="cert-code">CSA</div>
+                    <h4>Certified SOC Analyst</h4>
+                    <p>Analystes SOC niveau 1 & 2 : détection, triage, corrélation SIEM et gestion des incidents.</p>
+                    <a href="#contact" class="cert-cta">S'inscrire <span>→</span></a>
+                </div>
+                <div class="cert-card">
+                    <span class="cert-level level-advanced">Avancé</span>
+                    <div class="cert-code">CTIA</div>
+                    <h4>Certified Threat Intelligence Analyst</h4>
+                    <p>Threat intelligence stratégique, tactique et opérationnelle. Analyse APT et dark web.</p>
+                    <a href="#contact" class="cert-cta">S'inscrire <span>→</span></a>
+                </div>
+                <div class="cert-card">
+                    <span class="cert-level level-foundation">Débutant</span>
+                    <div class="cert-code">EHE / CEH Foundation</div>
+                    <h4>Ethical Hacking Essentials</h4>
+                    <p>Introduction au hacking éthique pour les débutants. Idéal pour préparer la certification CEH.</p>
+                    <a href="#contact" class="cert-cta">S'inscrire <span>→</span></a>
+                </div>
+                <div class="cert-card">
+                    <span class="cert-level level-intermediate">Intermédiaire</span>
+                    <div class="cert-code">CASE Java / .NET</div>
+                    <h4>Certified Application Security Engineer</h4>
+                    <p>Sécurité des applications Java et .NET, OWASP Top 10, tests de sécurité intégrés au SDLC.</p>
+                    <a href="#contact" class="cert-cta">S'inscrire <span>→</span></a>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 2rem;">
+                <button onclick="toggleCerts('ecc')" id="btn-ecc" class="btn btn-outline" style="cursor:pointer;">Voir toutes les certifications (12+) ↓</button>
+            </div>
+        </div>
+
+        <!-- PECB -->
+        <div class="provider-section" id="tab-pecb">
+            <div class="provider-header">
+                <div class="provider-logo-big">PECB</div>
+                <div class="provider-info">
+                    <h3>PECB — Gouvernance, Risques & Conformité ISO</h3>
+                    <p data-i18n="pecb-desc">Organisme de certification accrédité pour les normes ISO. Idéal pour la conformité réglementaire en France, Europe et Afrique francophone.</p>
+                </div>
+            </div>
+            <div class="certs-grid">
+                <div class="cert-card">
+                    <span class="cert-level level-foundation">Foundation</span>
+                    <div class="cert-code">ISO/IEC 27001</div>
+                    <h4>ISO 27001 Foundation</h4>
+                    <p>Introduction aux exigences de la norme ISO 27001 et aux fondamentaux de la sécurité de l'information.</p>
+                    <a href="#contact" class="cert-cta">S'inscrire <span>→</span></a>
+                </div>
+                <div class="cert-card">
+                    <div style="margin-bottom:0.8rem;"><span style="background:rgba(239,68,68,0.1); color:#ef4444; border:1px solid rgba(239,68,68,0.3); font-size:0.75rem; font-weight:700; padding:4px 10px; border-radius:6px; display:inline-block;">🔥 Sessions ouvertes</span></div>
+                    <span class="cert-level level-advanced">Lead Implementer</span>
+                    <div class="cert-code">ISO/IEC 27001</div>
+                    <h4>ISO 27001 Lead Implementer</h4>
+                    <p>Implémenter un Système de Management de la Sécurité de l'Information (SMSI) conforme à l'ISO 27001.</p>
+                    <a href="#contact" class="cert-cta">S'inscrire <span>→</span></a>
+                </div>
+                <div class="cert-card">
+                    <span class="cert-level level-expert">Lead Auditor</span>
+                    <div class="cert-code">ISO/IEC 27001</div>
+                    <h4>ISO 27001 Lead Auditor</h4>
+                    <p>Planifier et conduire des audits de certification SMSI selon ISO 19011 et ISO/IEC 27007.</p>
+                    <a href="#contact" class="cert-cta">S'inscrire <span>→</span></a>
+                </div>
+                <div class="cert-card">
+                    <span class="cert-level level-advanced">Lead Implementer</span>
+                    <div class="cert-code">ISO/IEC 27005</div>
+                    <h4>ISO 27005 Risk Manager</h4>
+                    <p>Gestion des risques en sécurité de l'information. Analyse, évaluation et traitement selon ISO 27005.</p>
+                    <a href="#contact" class="cert-cta">S'inscrire <span>→</span></a>
+                </div>
+                <div class="cert-card">
+                    <span class="cert-level level-advanced">Lead Implementer</span>
+                    <div class="cert-code">ISO 22301</div>
+                    <h4>ISO 22301 Lead Implementer — BCP</h4>
+                    <p>Mettre en œuvre un plan de continuité d'activité robuste et résilient face aux crises.</p>
+                    <a href="#contact" class="cert-cta">S'inscrire <span>→</span></a>
+                </div>
+                <div class="cert-card">
+                    <span class="cert-level level-expert">Lead Manager</span>
+                    <div class="cert-code">CISM / CISO</div>
+                    <h4>PECB Certified CISO</h4>
+                    <p>Devenir CISO : stratégie de sécurité, gouvernance, gestion des risques et des parties prenantes.</p>
+                    <a href="#contact" class="cert-cta">S'inscrire <span>→</span></a>
+                </div>
+            </div>
+            <div id="more-pecb" class="certs-grid" style="display: none; margin-top: 2rem;">
+                <div class="cert-card">
+                    <span class="cert-level level-expert">Lead Auditor</span>
+                    <div class="cert-code">ISO 22301</div>
+                    <h4>ISO 22301 Lead Auditor — Continuité d'Activité</h4>
+                    <p>Audit du Système de Management de la Continuité d'Activité (SMCA) selon ISO 22301.</p>
+                    <a href="#contact" class="cert-cta">S'inscrire <span>→</span></a>
+                </div>
+                <div class="cert-card">
+                    <span class="cert-level level-advanced">Lead Implementer</span>
+                    <div class="cert-code">ISO/IEC 27701</div>
+                    <h4>ISO 27701 Privacy Lead Implementer</h4>
+                    <p>Extension ISO 27001 pour la protection des données personnelles. Conformité RGPD / GDPR.</p>
+                    <a href="#contact" class="cert-cta">S'inscrire <span>→</span></a>
+                </div>
+                <div class="cert-card">
+                    <span class="cert-level level-advanced">Lead Implementer</span>
+                    <div class="cert-code">ISO/IEC 27017</div>
+                    <h4>ISO 27017 Cloud Security Lead Implementer</h4>
+                    <p>Sécurité des services cloud : contrôles additionnels pour fournisseurs et clients cloud.</p>
+                    <a href="#contact" class="cert-cta">S'inscrire <span>→</span></a>
+                </div>
+                <div class="cert-card">
+                    <span class="cert-level level-advanced">Lead Implementer</span>
+                    <div class="cert-code">ISO/IEC 20000-1</div>
+                    <h4>ISO 20000 IT Service Management Lead Implementer</h4>
+                    <p>Mise en œuvre d'un ITSM conforme à ISO 20000. Alignement SI et business.</p>
+                    <a href="#contact" class="cert-cta">S'inscrire <span>→</span></a>
+                </div>
+                <div class="cert-card">
+                    <span class="cert-level level-expert">Lead Auditor</span>
+                    <div class="cert-code">ISO 37001</div>
+                    <h4>ISO 37001 Anti-Bribery Lead Auditor</h4>
+                    <p>Audit du système de management anti-corruption. Exigences de conformité et bonnes pratiques.</p>
+                    <a href="#contact" class="cert-cta">S'inscrire <span>→</span></a>
+                </div>
+                <div class="cert-card">
+                    <span class="cert-level level-advanced">Lead Implementer</span>
+                    <div class="cert-code">ISO/IEC 42001</div>
+                    <h4>ISO 42001 AI Management System Lead Implementer</h4>
+                    <p>Gouvernance de l'IA : conformité à la norme ISO 42001 pour les systèmes d'intelligence artificielle.</p>
+                    <a href="#contact" class="cert-cta">S'inscrire <span>→</span></a>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 2rem;">
+                <button onclick="toggleCerts('pecb')" id="btn-pecb" class="btn btn-outline" style="cursor:pointer;">Voir l'ensemble des certifications ISO (15+) ↓</button>
+            </div>
+        </div>
+
+        <!-- Fortinet -->
+        <div class="provider-section" id="tab-fortinet">
+            <div class="provider-header">
+                <div class="provider-logo-big">FTN</div>
+                <div class="provider-info">
+                    <h3>Fortinet — Sécurité Réseau & Infrastructure</h3>
+                    <p>Le programme NSE (Network Security Expert) de Fortinet couvre tous les niveaux de la sécurité réseau et des pare-feux enterprise.</p>
+                </div>
+            </div>
+            <div class="certs-grid">
+                <div class="cert-card">
+                    <div style="margin-bottom:0.8rem;"><span style="background:rgba(239,68,68,0.1); color:#ef4444; border:1px solid rgba(239,68,68,0.3); font-size:0.75rem; font-weight:700; padding:4px 10px; border-radius:6px; display:inline-block;">🔥 Très demandé</span></div>
+                    <span class="cert-level level-intermediate">NSE 4</span>
+                    <div class="cert-code">FortiGate Security & Infrastructure</div>
+                    <h4>NSE 4 — FortiGate Administrator</h4>
+                    <p>Configuration et administration de FortiGate : policies, NAT, VPN, authentification, logging.</p>
+                    <a href="#contact" class="cert-cta">S'inscrire <span>→</span></a>
+                </div>
+                <div class="cert-card">
+                    <span class="cert-level level-intermediate">NSE 5</span>
+                    <div class="cert-code">FortiManager & FortiAnalyzer</div>
+                    <h4>NSE 5 — Network Security Analyst</h4>
+                    <p>Gestion centralisée des politiques FortiManager et analyse des logs avec FortiAnalyzer.</p>
+                    <a href="#contact" class="cert-cta">S'inscrire <span>→</span></a>
+                </div>
+                <div class="cert-card">
+                    <span class="cert-level level-advanced">NSE 6</span>
+                    <div class="cert-code">FortiWeb / FortiMail / FortiSIEM</div>
+                    <h4>NSE 6 — Fortinet Specialist</h4>
+                    <p>Spécialisations avancées : WAF FortiWeb, sécurité email FortiMail, SIEM avec FortiSIEM.</p>
+                    <a href="#contact" class="cert-cta">S'inscrire <span>→</span></a>
+                </div>
+                <div class="cert-card">
+                    <div style="margin-bottom:0.8rem;"><span style="background:rgba(239,68,68,0.1); color:#ef4444; border:1px solid rgba(239,68,68,0.3); font-size:0.75rem; font-weight:700; padding:4px 10px; border-radius:6px; display:inline-block;">⏳ Places limitées</span></div>
+                    <span class="cert-level level-expert">NSE 7</span>
+                    <div class="cert-code">Enterprise Firewall / SD-WAN</div>
+                    <h4>NSE 7 — Network Security Architect</h4>
+                    <p>Architecture enterprise avec FortiGate, SD-WAN, Zero Trust, segmentation avancée et troubleshooting expert.</p>
+                    <a href="#contact" class="cert-cta">S'inscrire <span>→</span></a>
+                </div>
+            </div>
+            <div id="more-fortinet" class="certs-grid" style="display: none; margin-top: 2rem;">
+                <div class="cert-card">
+                    <span class="cert-level level-foundation">NSE 1-2</span>
+                    <div class="cert-code">Fortinet NSE 1 & 2</div>
+                    <h4>The Threat Landscape & Evolution of Security</h4>
+                    <p>Introduction au paysage des menaces, fondamentaux de la cybersécurité et des produits Fortinet.</p>
+                    <a href="#contact" class="cert-cta">S'inscrire <span>→</span></a>
+                </div>
+                <div class="cert-card">
+                    <span class="cert-level level-foundation">NSE 3</span>
+                    <div class="cert-code">Fortinet NSE 3</div>
+                    <h4>Fortinet Product Sales</h4>
+                    <p>Vue d'ensemble de l'écosystème Fortinet : FortiGate, FortiAnalyzer, FortiManager, FortiCloud.</p>
+                    <a href="#contact" class="cert-cta">S'inscrire <span>→</span></a>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 2rem;">
+                <button onclick="toggleCerts('fortinet')" id="btn-fortinet" class="btn btn-outline" style="cursor:pointer;">Voir toutes les certifications Fortinet (8+) ↓</button>
+            </div>
+        </div>
+
+        <!-- Palo Alto -->
+        <div class="provider-section" id="tab-palo">
+            <div class="provider-header">
+                <div class="provider-logo-big">PAN</div>
+                <div class="provider-info">
+                    <h3>Palo Alto Networks — Cloud Security & SecOps</h3>
+                    <p>Certifications Palo Alto Networks pour maîtriser les NGFW, SASE, SOAR et les opérations de sécurité modernes.</p>
+                </div>
+            </div>
+            <div class="certs-grid">
+                <div class="cert-card">
+                    <span class="cert-level level-foundation">Associate</span>
+                    <div class="cert-code">PCCSA</div>
+                    <h4>Palo Alto Networks Cybersecurity Associate</h4>
+                    <p>Fondamentaux de la cybersécurité et introduction à l'écosystème Palo Alto Networks.</p>
+                    <a href="#contact" class="cert-cta">S'inscrire <span>→</span></a>
+                </div>
+                <div class="cert-card">
+                    <span class="cert-level level-intermediate">Administrator</span>
+                    <div class="cert-code">PCNSA</div>
+                    <h4>Palo Alto Networks Security Administrator</h4>
+                    <p>Administration des pare-feux de nouvelle génération (NGFW) PAN-OS : policies, App-ID, User-ID.</p>
+                    <a href="#contact" class="cert-cta">S'inscrire <span>→</span></a>
+                </div>
+                <div class="cert-card">
+                    <div style="margin-bottom:0.8rem;"><span style="background:rgba(239,68,68,0.1); color:#ef4444; border:1px solid rgba(239,68,68,0.3); font-size:0.75rem; font-weight:700; padding:4px 10px; border-radius:6px; display:inline-block;">🔥 Sessions ouvertes</span></div>
+                    <span class="cert-level level-advanced">Engineer</span>
+                    <div class="cert-code">PCNSE</div>
+                    <h4>Palo Alto Networks Security Engineer</h4>
+                    <p>Déploiement, configuration et troubleshooting avancé des solutions Palo Alto en environnement enterprise.</p>
+                    <a href="#contact" class="cert-cta">S'inscrire <span>→</span></a>
+                </div>
+                <div class="cert-card">
+                    <span class="cert-level level-advanced">SecOps</span>
+                    <div class="cert-code">PCSAE — Cortex</div>
+                    <h4>Cortex XSOAR Certified Automation Engineer</h4>
+                    <p>Automatisation des opérations de sécurité avec Cortex XSOAR : playbooks, intégrations, SOAR.</p>
+                    <a href="#contact" class="cert-cta">S'inscrire <span>→</span></a>
+                </div>
+            </div>
+            <div id="more-palo" class="certs-grid" style="display: none; margin-top: 2rem;">
+                <div class="cert-card">
+                    <span class="cert-level level-advanced">Cloud</span>
+                    <div class="cert-code">PCCSE — Prisma Cloud</div>
+                    <h4>Prisma Certified Cloud Security Engineer</h4>
+                    <p>Sécurité cloud native avec Prisma Cloud : CSPM, CWPP, CIEM sur AWS, Azure, GCP.</p>
+                    <a href="#contact" class="cert-cta">S'inscrire <span>→</span></a>
+                </div>
+                <div class="cert-card">
+                    <span class="cert-level level-expert">Architect</span>
+                    <div class="cert-code">PSE — Strata / Prisma</div>
+                    <h4>Palo Alto Systems Engineer Professional</h4>
+                    <p>Architecture complète de la plateforme Palo Alto : Strata, Prisma, Cortex — niveau architecte.</p>
+                    <a href="#contact" class="cert-cta">S'inscrire <span>→</span></a>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 2rem;">
+                <button onclick="toggleCerts('palo')" id="btn-palo" class="btn btn-outline" style="cursor:pointer;">Voir toutes les certifications Palo Alto (6+) ↓</button>
+            </div>
+        </div>
+
+        <!-- F5 -->
+        <div class="provider-section" id="tab-f5">
+            <div class="provider-header">
+                <div class="provider-logo-big">F5</div>
+                <div class="provider-info">
+                    <h3>F5 Networks — Application Security & Delivery</h3>
+                    <p>Certifications F5 pour la gestion avancée du trafic applicatif, la sécurité WAF et l'optimisation des applications d'entreprise.</p>
+                </div>
+            </div>
+            <div class="certs-grid">
+                <div class="cert-card">
+                    <span class="cert-level level-foundation">Foundation</span>
+                    <div class="cert-code">101 — TMOS</div>
+                    <h4>F5 101 — Application Delivery Fundamentals</h4>
+                    <p>Fondamentaux de la livraison d'applications, ADC, load balancing et architecture F5 BIG-IP.</p>
+                    <a href="#contact" class="cert-cta">S'inscrire <span>→</span></a>
+                </div>
+                <div class="cert-card">
+                    <div style="margin-bottom:0.8rem;"><span style="background:rgba(239,68,68,0.1); color:#ef4444; border:1px solid rgba(239,68,68,0.3); font-size:0.75rem; font-weight:700; padding:4px 10px; border-radius:6px; display:inline-block;">⏳ Places limitées</span></div>
+                    <span class="cert-level level-intermediate">Administrator</span>
+                    <div class="cert-code">201 — TMOS Admin</div>
+                    <h4>F5 201 — TMOS Administration</h4>
+                    <p>Administration quotidienne de BIG-IP : configuration, monitoring, maintenance et troubleshooting.</p>
+                    <a href="#contact" class="cert-cta">S'inscrire <span>→</span></a>
+                </div>
+                <div class="cert-card">
+                    <span class="cert-level level-advanced">Security</span>
+                    <div class="cert-code">303 — BIG-IP ASM</div>
+                    <h4>F5 303 — BIG-IP ASM Specialist</h4>
+                    <p>Pare-feu applicatif web (WAF) avec BIG-IP ASM : protection OWASP, bot mitigation, API security.</p>
+                    <a href="#contact" class="cert-cta">S'inscrire <span>→</span></a>
+                </div>
+            </div>
+            <div id="more-f5" class="certs-grid" style="display: none; margin-top: 2rem;">
+                <div class="cert-card">
+                    <span class="cert-level level-advanced">Access</span>
+                    <div class="cert-code">304 — BIG-IP APM</div>
+                    <h4>F5 304 — BIG-IP APM Specialist</h4>
+                    <p>Gestion des accès et identités avec APM : SSO, MFA, Zero Trust Network Access (ZTNA).</p>
+                    <a href="#contact" class="cert-cta">S'inscrire <span>→</span></a>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 2rem;">
+                <button onclick="toggleCerts('f5')" id="btn-f5" class="btn btn-outline" style="cursor:pointer;">Voir toutes les certifications F5 (5+) ↓</button>
+            </div>
+        </div>
+
+        <div class="cta-banner">
+            <h3 data-i18n="cta-title">Prêt à propulser votre carrière en Cybersécurité ?</h3>
+            <p data-i18n="cta-desc">Nos experts vous accompagnent pour choisir la formation cybersécurité ou certification ISO adaptée à vos objectifs et votre localisation (Maroc, France ou à distance).</p>
+            <div class="cta-buttons">
+                <a href="#contact" class="btn btn-primary" data-i18n="cta-btn1">Obtenir ma certification</a>
+                <a href="https://wa.me/212645066933" target="_blank" class="btn btn-outline" data-i18n="cta-btn2">Parler à un expert pédagogique</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== LEARNING PATH ===== -->
+<section class="path-section section fade-in-element" id="path">
+    <div class="container">
+        <div class="section-header">
+            <h2 data-i18n="path-h2">Votre Parcours d'Apprentissage</h2>
+            <p class="subtitle" data-i18n="path-subtitle">Trois étapes simples pour obtenir votre certification</p>
+        </div>
+        <div class="path-steps">
+            <div class="path-step">
+                <div class="path-step-num">1</div>
+                <h3 data-i18n="path-s1-title">Choisissez votre certification</h3>
+                <p data-i18n="path-s1-desc">Évaluez votre niveau et vos objectifs avec nos conseillers. Sélectionnez parmi 50+ certifications officielles adaptées à votre profil.</p>
+            </div>
+            <div class="path-step">
+                <div class="path-step-num">2</div>
+                <h3 data-i18n="path-s2-title">Formation pratique & intensive</h3>
+                <p data-i18n="path-s2-desc">Immergez-vous dans nos labs réels, exercices pratiques et scénarios d'attaques/défense réels avec des formateurs experts certifiés.</p>
+            </div>
+            <div class="path-step">
+                <div class="path-step-num">3</div>
+                <h3 data-i18n="path-s3-title">Certification & Évolution</h3>
+                <p data-i18n="path-s3-desc">Passez l'examen officiel, obtenez votre certification internationale et bénéficiez de notre accompagnement carrière post-formation.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== WHY US ===== -->
+<section class="whyus fade-in-element" id="whyus">
+    <div class="container">
+        <div class="section-header">
+            <h2 data-i18n="why-h2">Pourquoi Choisir SecureValley pour Votre Formation en Cybersécurité ?</h2>
+            <p class="subtitle" data-i18n="why-subtitle">Une méthode d'apprentissage reconnue pour son efficacité au Maroc et à l'international</p>
+        </div>
+        <div class="why-grid">
+            <div class="why-card">
+                <div class="why-icon"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--c-green)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg></div>
+                <h3 data-i18n="why-s1-title">Laboratoires Pratiques Réels</h3>
+                <p data-i18n="why-s1-desc">Accédez aux mêmes outils utilisés par les professionnels : Kali Linux, Metasploit, Wireshark, FortiGate physiques et simulateurs cloud.</p>
+            </div>
+            <div class="why-card">
+                <div class="why-icon"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--c-green)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><polyline points="17 11 19 13 23 9"></polyline></svg></div>
+                <h3 data-i18n="why-s2-title">Formateurs Certifiés & Expérimentés</h3>
+                <p data-i18n="why-s2-desc">Nos instructeurs sont certifiés EC-Council, PECB et Fortinet avec une expérience terrain dans des entreprises internationales.</p>
+            </div>
+            <div class="why-card">
+                <div class="why-icon"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--c-green)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg></div>
+                <h3 data-i18n="why-s3-title">Certifications Reconnues Mondialement</h3>
+                <p data-i18n="why-s3-desc">Toutes nos certifications sont reconnues dans 145+ pays. Boostez votre employabilité au Maroc, en France et à l'international.</p>
+            </div>
+            <div class="why-card">
+                <div class="why-icon"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--c-green)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle><line x1="22" y1="2" x2="16" y2="8"></line></svg></div>
+                <h3 data-i18n="why-s4-title">Taux de Réussite de 95%</h3>
+                <p data-i18n="why-s4-desc">Notre méthode pédagogique éprouvée et nos examens blancs garantissent un taux de réussite parmi les plus élevés du marché.</p>
+            </div>
+            <div class="why-card">
+                <div class="why-icon"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--c-green)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path><path d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path></svg></div>
+                <h3 data-i18n="why-s5-title">Accompagnement Carrière</h3>
+                <p data-i18n="why-s5-desc">Réseau d'entreprises partenaires, aide à la rédaction de CV, préparation aux entretiens et mise en relation avec des recruteurs.</p>
+            </div>
+            <div class="why-card">
+                <div class="why-icon"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--c-green)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="2" y1="20" x2="22" y2="20"></line><line x1="12" y1="17" x2="12" y2="20"></line></svg></div>
+                <h3 data-i18n="why-s6-title">Formation Présentiel & Distance</h3>
+                <p data-i18n="why-s6-desc">Suivez vos formations en présentiel à Temara ou à distance depuis la France et partout dans le monde francophone.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="contact section fade-in-element" id="contact">
+    <div class="container">
+        <div class="contact-grid">
+            <div class="contact-info">
+                <div class="badge" style="margin-bottom:1rem" data-i18n="contact-badge">Contactez-nous</div>
+                <h2 data-i18n="contact-h2">Démarrez votre Formation en Cybersécurité Dès Aujourd'hui</h2>
+                <p data-i18n="contact-p">Contactez notre équipe pour planifier votre certification. Que vous soyez au Maroc ou en France, notre consultation est entièrement gratuite.</p>
+
+                <div class="contact-item">
+                    <div class="ci-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--c-green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></div>
+                    <div>
+                        <div class="ci-label">Email</div>
+                        <div class="ci-val"><a href="mailto:training@securevalley.net">training@securevalley.net</a></div>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="ci-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--c-green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></div>
+                    <div>
+                        <div class="ci-label">Téléphone</div>
+                        <div class="ci-val">
+                            <a href="tel:+212645066933">+212 645-066933</a> / <a href="tel:+212645066399">+212 645-066399</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="ci-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--c-green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></div>
+                    <div>
+                        <div class="ci-label" data-i18n="ci-addr-label">Adresse</div>
+                        <div class="ci-val" data-i18n="contact-addr">Wifaq, IMM 1316, Temara<br>(À côté de la gare de train)</div>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="ci-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--c-green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></div>
+                    <div>
+                        <div class="ci-label" data-i18n="ci-hours-label">Horaires</div>
+                        <div class="ci-val" data-i18n="contact-hours">Lundi – Vendredi, 9h00 – 18h00</div>
+                    </div>
+                </div>
+                <a href="https://wa.me/212645066933" target="_blank" class="whatsapp-btn" data-i18n="contact-whatsapp">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/></svg>
+                    Discuter sur WhatsApp
+                </a>
+            </div>
+
+            <div class="contact-form">
+                <h3 style="margin-bottom:2rem" data-i18n="form-title">Demande de Renseignement</h3>
+                <form onsubmit="event.preventDefault(); alert('Message envoyé ! Notre équipe vous contactera rapidement.');">
+                    <div class="form-group">
+                        <label data-i18n="form-name">Nom Complet</label>
+                        <input type="text" name="name" placeholder="Votre nom complet" required>
+                    </div>
+                    <div class="form-group">
+                        <label data-i18n="form-email">Adresse Email</label>
+                        <input type="email" name="email" placeholder="votre@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label data-i18n="form-phone">Téléphone / WhatsApp</label>
+                        <input type="tel" name="phone" placeholder="+212 6XX XXX XXX">
+                    </div>
+                    <div class="form-group">
+                        <label data-i18n="form-cert">Certification Souhaitée</label>
+                        <select name="cert">
+                            <option value="">— Sélectionner une certification —</option>
+                            <optgroup label="EC-Council">
+                                <option>CEH — Certified Ethical Hacker</option>
+                                <option>CPENT — Certified Penetration Testing Professional</option>
+                                <option>CHFI — Computer Hacking Forensic Investigator</option>
+                                <option>CCISO — Chief Information Security Officer</option>
+                                <option>CSA — Certified SOC Analyst</option>
+                                <option>CND — Certified Network Defender</option>
+                                <option>Autre EC-Council</option>
+                            </optgroup>
+                            <optgroup label="PECB / ISO">
+                                <option>ISO 27001 Lead Implementer</option>
+                                <option>ISO 27001 Lead Auditor</option>
+                                <option>ISO 27005 Risk Manager</option>
+                                <option>ISO 22301 Lead Implementer</option>
+                                <option>ISO 27701 Privacy</option>
+                                <option>ISO 42001 IA Management</option>
+                                <option>Autre PECB / ISO</option>
+                            </optgroup>
+                            <optgroup label="Fortinet">
+                                <option>NSE 4 — FortiGate Administrator</option>
+                                <option>NSE 7 — Network Security Architect</option>
+                                <option>Autre Fortinet NSE</option>
+                            </optgroup>
+                            <optgroup label="Palo Alto Networks">
+                                <option>PCNSA — Security Administrator</option>
+                                <option>PCNSE — Security Engineer</option>
+                                <option>PCCSE — Prisma Cloud</option>
+                            </optgroup>
+                            <optgroup label="F5 Networks">
+                                <option>F5 201 — TMOS Administration</option>
+                                <option>F5 303 — BIG-IP ASM Specialist</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label data-i18n="form-msg">Message ou Question</label>
+                        <textarea name="message" placeholder="Décrivez votre situation, votre niveau actuel, vos objectifs..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width:100%; font-size:1rem;" data-i18n="form-btn">S'inscrire</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-inner">
+            <div>
+                <a href="#" class="logo" style="margin-bottom:0.8rem; display:inline-flex;">
+                    <svg viewBox="0 0 200 50" height="32" width="auto" xmlns="http://www.w3.org/2000/svg">
+                        <text x="10" y="36" font-family="'Arial Black', Impact, sans-serif" font-size="22" font-weight="900" fill="var(--c-green)">SECUREVALLEY</text>
+                    </svg>
+                </a>
+                <p style="color:var(--c-muted); font-size:0.85rem;" data-i18n="footer-desc">Leader de la formation cybersécurité certifiante au Maroc depuis 20 ans.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#" data-i18n="footer-priv">Confidentialité</a>
+                <a href="#" data-i18n="footer-terms">Conditions</a>
+                <a href="#" data-i18n="footer-shop">Boutique</a>
+                <a href="#">Blog</a>
+            </div>
+            <div class="footer-copy" data-i18n="footer-copy">© 2026 SecureValley Training. Tous droits réservés.</div>
+        </div>
+    </div>
+</footer>
+
+<button id="theme-toggle" aria-label="Basculer le thème">
+    <span class="icon-sun">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+    </span>
+    <span class="icon-moon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    </span>
+</button>
+
+<script>
+// Tab switching
+function switchTab(tabId) {
+    document.querySelectorAll('.provider-section').forEach(s => s.classList.remove('active'));
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    const el = document.getElementById('tab-' + tabId);
+    if (el) el.classList.add('active');
+    const btns = document.querySelectorAll('.tab-btn');
+    const order = ['ecc','pecb','fortinet','palo','f5'];
+    const idx = order.indexOf(tabId);
+    if (btns[idx]) btns[idx].classList.add('active');
+}
+
+function toggleCerts(providerId) {
+    const moreDiv = document.getElementById('more-' + providerId);
+    const btn = document.getElementById('btn-' + providerId);
+    if (moreDiv.style.display === 'none') {
+        moreDiv.style.display = 'grid'; // Maintain css grid behavior
+        btn.textContent = 'Réduire la liste ↑';
+    } else {
+        moreDiv.style.display = 'none';
+        
+        // Restore original button text based on provider
+        if (providerId === 'ecc') btn.textContent = 'Voir toutes les certifications (12+) ↓';
+        else if (providerId === 'pecb') btn.textContent = "Voir l'ensemble des certifications ISO (15+) ↓";
+        else if (providerId === 'fortinet') btn.textContent = 'Voir toutes les certifications Fortinet (8+) ↓';
+        else if (providerId === 'palo') btn.textContent = 'Voir toutes les certifications Palo Alto (6+) ↓';
+        else if (providerId === 'f5') btn.textContent = 'Voir toutes les certifications F5 (5+) ↓';
+    }
+}
+</script>
+<script src="lang.js" defer></script>
+<script src="script.js" defer></script>
+</body>
+</html>
