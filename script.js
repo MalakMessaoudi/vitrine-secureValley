@@ -39,11 +39,18 @@ document.addEventListener('DOMContentLoaded', () => {
     // 2. Navbar Scroll Effect
     const navbar = document.getElementById('header');
     
+    let isScrolling = false;
     window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
+        if (!isScrolling) {
+            window.requestAnimationFrame(() => {
+                if (window.scrollY > 50) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+                isScrolling = false;
+            });
+            isScrolling = true;
         }
     });
 
@@ -83,28 +90,36 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 4. Update Active Nav Link Based on Scroll Position
+    // 4. Update Active Nav Link Based on Scroll Position (Optimized with IntersectionObserver)
     const sections = document.querySelectorAll('section');
     
-    window.addEventListener('scroll', () => {
-        let current = '';
-        
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop;
-            const sectionHeight = section.clientHeight;
-            // Adjustment for sticky header offset
-            if (pageYOffset >= (sectionTop - 150)) {
-                current = section.getAttribute('id');
-            }
-        });
+    if ('IntersectionObserver' in window) {
+        const navObserverOptions = {
+            root: null,
+            rootMargin: '-150px 0px -50% 0px', // Trigger when section is in the top half of viewport
+            threshold: 0
+        };
 
-        navLinks.forEach(link => {
-            link.classList.remove('active');
-            if (link.getAttribute('href').includes(current) && current !== '') {
-                link.classList.add('active');
-            }
+        const navObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const id = entry.target.getAttribute('id');
+                    if (id) {
+                        navLinks.forEach(link => {
+                            link.classList.remove('active');
+                            if (link.getAttribute('href') === '#' + id || link.getAttribute('href').includes('#' + id)) {
+                                link.classList.add('active');
+                            }
+                        });
+                    }
+                }
+            });
+        }, navObserverOptions);
+
+        sections.forEach(section => {
+            if(section.getAttribute('id')) navObserver.observe(section);
         });
-    });
+    }
 
     // 5. Dark/Light Mode Theme Toggle
     const themeBtn = document.getElementById('theme-toggle');
