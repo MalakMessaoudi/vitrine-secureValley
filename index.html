@@ -48,7 +48,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Outfit:wght@500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Outfit:wght@500;700;900&display=swap" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Outfit:wght@500;700;900&display=swap" rel="stylesheet"></noscript>
     <style>
         /* ===== HERO ENHANCED ===== */
         .hero { min-height: 100vh; display: flex; align-items: center; background: var(--c-black); position: relative; overflow: hidden; padding-top: 80px; }
@@ -281,7 +282,7 @@
 <header class="navbar" id="header">
     <div class="nav-container">
         <a href="#" class="logo">
-            <img src="image.png" alt="SecureValley Training Center" style="height: 55px; width: auto; object-fit: contain;">
+            <img src="image.png" alt="SecureValley Training Center" width="150" height="55" style="height: 55px; width: auto; object-fit: contain;">
         </a>
         <nav class="nav-menu" id="nav-menu">
             <ul class="nav-list">
@@ -315,7 +316,7 @@
 <main>
 <!-- ===== HERO ===== -->
 <section class="hero slide-up-element" id="hero">
-    <img src="bg.png" alt="" class="hero-bg-img" aria-hidden="true">
+    <img src="bg.png" alt="" width="1920" height="1080" class="hero-bg-img" aria-hidden="true">
     <div class="container hero-container">
         <div class="hero-content">
             <div class="badge" data-i18n="hero-badge">Formation Internationale en Cybersécurité</div>
@@ -347,7 +348,7 @@
         <div class="hero-visual">
             <div class="hero-img-wrapper">
                 <div class="glow-effect"></div>
-                <img src="accueil.png" alt="Nos certifications clés" class="hero-img" loading="lazy">
+                <img src="accueil.png" alt="Nos certifications clés" width="400" height="400" class="hero-img" loading="lazy">
             </div>
             
             <div class="hero-floating-card hero-fc1">
@@ -387,8 +388,8 @@
     <div class="container">
         <div class="about-grid">
             <div class="about-img-wrap">
-                <img src="about.png" alt="SecureValley Training Center Temara Maroc " class="about-img" loading="lazy">
-                <img src="about2.png" alt=" Expert Cybersécurité" class="about-img-secondary" loading="lazy">
+                <img src="about.png" alt="SecureValley Training Center Temara Maroc " width="600" height="400" class="about-img" loading="lazy">
+                <img src="about2.png" alt=" Expert Cybersécurité" width="300" height="200" class="about-img-secondary" loading="lazy">
                 <div class="about-badge-float">
                     <strong>20</strong>
                     <span>ans d'expertise</span>
@@ -427,11 +428,11 @@
         </div>
 
         <div class="tabs-wrapper" role="tablist">
-            <button class="tab-btn active" onclick="switchTab('ecc')" data-i18n="tab-ecc">EC-Council</button>
-            <button class="tab-btn" onclick="switchTab('pecb')" data-i18n="tab-pecb">PECB / ISO</button>
-            <button class="tab-btn" onclick="switchTab('fortinet')" data-i18n="tab-fortinet">Fortinet</button>
-            <button class="tab-btn" onclick="switchTab('palo')" data-i18n="tab-palo">Palo Alto</button>
-            <button class="tab-btn" onclick="switchTab('f5')" data-i18n="tab-f5">F5 Networks</button>
+            <button class="tab-btn active" role="tab" aria-selected="true" onclick="switchTab('ecc')" data-i18n="tab-ecc">EC-Council</button>
+            <button class="tab-btn" role="tab" aria-selected="false" onclick="switchTab('pecb')" data-i18n="tab-pecb">PECB / ISO</button>
+            <button class="tab-btn" role="tab" aria-selected="false" onclick="switchTab('fortinet')" data-i18n="tab-fortinet">Fortinet</button>
+            <button class="tab-btn" role="tab" aria-selected="false" onclick="switchTab('palo')" data-i18n="tab-palo">Palo Alto</button>
+            <button class="tab-btn" role="tab" aria-selected="false" onclick="switchTab('f5')" data-i18n="tab-f5">F5 Networks</button>
         </div>
 
         <!-- EC-Council -->
@@ -1006,7 +1007,7 @@
         <div class="footer-inner">
             <div>
                 <a href="#" class="logo" style="margin-bottom:0.8rem; display:inline-flex;">
-                    <img src="image.png" alt="SecureValley Training Center" style="height: 45px; width: auto; object-fit: contain;">
+                    <img src="image.png" alt="SecureValley Training Center" width="150" height="45" style="height: 45px; width: auto; object-fit: contain;">
                 </a>
                 <p style="color:var(--c-muted); font-size:0.85rem;" data-i18n="footer-desc">Leader de la formation cybersécurité certifiante au Maroc depuis 20 ans.</p>
             </div>
