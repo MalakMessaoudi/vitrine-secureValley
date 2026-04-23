@@ -20,9 +20,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 hamburger.style.backgroundColor = 'transparent';
                 menuToggle.style.setProperty('--c-white', 'transparent'); // visual trick
                 menuToggle.classList.add('is-active');
+                menuToggle.setAttribute('aria-expanded', 'true');
             } else {
                 hamburger.style.backgroundColor = '';
                 menuToggle.classList.remove('is-active');
+                menuToggle.setAttribute('aria-expanded', 'false');
             }
         });
     }
@@ -32,6 +34,10 @@ document.addEventListener('DOMContentLoaded', () => {
         link.addEventListener('click', () => {
             if (navMenu.classList.contains('active')) {
                 navMenu.classList.remove('active');
+                menuToggle.setAttribute('aria-expanded', 'false');
+                const hamburger = menuToggle.querySelector('.hamburger');
+                if (hamburger) hamburger.style.backgroundColor = '';
+                menuToggle.classList.remove('is-active');
             }
         });
     });
