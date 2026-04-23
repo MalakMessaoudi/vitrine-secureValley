@@ -9,13 +9,13 @@
     --c-dark-gray: #112240;
     --c-white: #ffffff;
     --c-off-white: #ccd6f6;
-    --c-muted: #8892b0;
+    --c-muted: #94a3c6;
     
     /* Accents (SecureValley Official Brand Colors) */
-    --c-green: #3786d4; /* Vivid Tech Blue for dark mode */
-    --c-green-glow: rgba(55, 134, 212, 0.2);
-    --c-purple: #4a5c75; /* Metallic Slate */
-    --c-purple-glow: rgba(74, 92, 117, 0.2);
+    --c-green: #4da3ff; /* Vivid Tech Blue for dark mode */
+    --c-green-glow: rgba(77, 163, 255, 0.2);
+    --c-purple: #a2b5cd; /* Metallic Slate */
+    --c-purple-glow: rgba(162, 181, 205, 0.2);
 
     /* Typography */
     --font-heading: 'Outfit', sans-serif;
