@@ -3,10 +3,10 @@
    ========================================================================== */
    :root {
     /* Colors */
-    --c-dark-blue: #0A1F44;
-    --c-darker-blue: #04122d;
-    --c-black: #050a16;
-    --c-dark-gray: #112240;
+    --c-dark-blue: rgba(10, 31, 68, 0.8);
+    --c-darker-blue: rgba(4, 18, 45, 0.6);
+    --c-black: #050a16; /* Body background */
+    --c-dark-gray: rgba(17, 34, 64, 0.75);
     --c-white: #ffffff;
     --c-off-white: #ccd6f6;
     --c-muted: #94a3c6;
@@ -325,7 +325,7 @@ section.section {
     align-items: center;
     position: relative;
     padding-top: 80px;
-    background: radial-gradient(circle at 70% 30%, var(--c-dark-blue) 0%, var(--c-black) 60%);
+    background: transparent;
 }
 
 .hero-container {
@@ -772,9 +772,9 @@ section.section {
    ========================================================================== */
 [data-theme="light"] {
     --c-black: #ffffff; /* Main body bg is pure white */
-    --c-darker-blue: #f8fafc; /* Alt sections like Why Us become subtle slate */
-    --c-dark-blue: #ffffff; /* pure white nav */
-    --c-dark-gray: #ffffff; /* cards are pure white */
+    --c-darker-blue: rgba(248, 250, 252, 0.7); /* Alt sections like Why Us become subtle slate */
+    --c-dark-blue: transparent; /* pure white nav */
+    --c-dark-gray: rgba(255, 255, 255, 0.85); /* cards are pure white */
     
     --c-white: #0f172a; /* Slate 900 for Headings */
     --c-off-white: #334155; /* Slate 700 for Body text */
@@ -789,14 +789,15 @@ section.section {
 
 /* The training section gets a very soft blue-grey bg so the white cards POP out */
 [data-theme="light"] .training {
-    background-color: #f1f5f9; 
+    background-color: rgba(241, 245, 249, 0.7); 
 }
 
 /* Premium White Cards with incredible drop shadow */
 [data-theme="light"] .premium-card {
-    background: #ffffff !important;
+    background: rgba(255, 255, 255, 0.9) !important;
     border: 1px solid rgba(0, 0, 0, 0.05) !important;
     box-shadow: 0 10px 25px rgba(15, 23, 42, 0.05);
+    backdrop-filter: blur(10px);
 }
 
 [data-theme="light"] .premium-card:hover {

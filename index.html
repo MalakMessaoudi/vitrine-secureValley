@@ -51,10 +51,41 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Outfit:wght@500;700;900&display=swap" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Outfit:wght@500;700;900&display=swap" rel="stylesheet"></noscript>
     <style>
+        /* ===== VIDEO BACKGROUND ===== */
+        .video-bg-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: -10;
+            overflow: hidden;
+            pointer-events: none;
+        }
+        .bg-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+        .video-dark {
+            opacity: 0.25; /* Visibility in dark mode */
+        }
+        [data-theme="light"] .video-dark {
+            opacity: 0;
+        }
+        [data-theme="light"] .video-light {
+            opacity: 0.15; /* Visibility in light mode */
+        }
+
         /* ===== HERO ENHANCED ===== */
-        .hero { min-height: 100vh; display: flex; align-items: center; background: var(--c-black); position: relative; overflow: hidden; padding-top: 80px; }
+        .hero { min-height: 100vh; display: flex; align-items: center; background: transparent; position: relative; overflow: hidden; padding-top: 80px; }
         .hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 80% 60% at 70% 50%, rgba(55,134,212,0.12) 0%, transparent 70%), radial-gradient(ellipse 50% 40% at 20% 80%, rgba(74,92,117,0.1) 0%, transparent 60%); pointer-events: none; }
-        .hero-bg-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.07; z-index: 0; }
+        .hero-bg-img { display: none; /* Hide static image to show video */ }
         .hero-container { position: relative; z-index: 1; display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; padding: 2rem; margin-top: -60px; }
         .hero-content { max-width: 580px; }
         .badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(55,134,212,0.12); border: 1px solid rgba(55,134,212,0.35); color: var(--c-green); padding: 0.5rem 1.2rem; border-radius: 50px; font-size: 0.85rem; font-weight: 600; letter-spacing: 0.5px; margin-bottom: 1rem; }
@@ -169,7 +200,7 @@
         .form-group textarea { resize: vertical; min-height: 120px; }
 
         /* ===== FOOTER ===== */
-        .footer { background: #020813; border-top: 1px solid rgba(255,255,255,0.05); padding: 3rem 0; }
+        .footer { background: rgba(2, 8, 19, 0.6); backdrop-filter: blur(10px); border-top: 1px solid rgba(255,255,255,0.05); padding: 3rem 0; }
         .footer-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.5rem; }
         .footer-links { display: flex; gap: 2rem; }
         .footer-links a { color: var(--c-muted); font-size: 0.9rem; padding: 0.5rem; display: inline-block; } .footer-links a:hover { color: var(--c-white); }
@@ -252,15 +283,15 @@
         #lang-toggle:hover { border-color: var(--c-green); color: var(--c-green); }
 
         /* Theme toggle */
-        #theme-toggle { position: fixed; bottom: 30px; right: 30px; width: 54px; height: 54px; border-radius: 50%; background: var(--c-dark-gray); border: 2px solid var(--c-green); color: var(--c-white); display: flex; align-items: center; justify-content: center; cursor: pointer; z-index: 1000; box-shadow: 0 4px 12px rgba(0,0,0,0.3); transition: all 0.3s; }
-        #theme-toggle:hover { transform: scale(1.1); }
+        #theme-toggle { position: fixed; bottom: 30px; right: 30px; width: 54px; height: 54px; border-radius: 50%; background: var(--c-dark-gray); border: 2px solid var(--c-green); color: var(--c-white); display: flex; align-items: center; justify-content: center; cursor: pointer; z-index: 9999; box-shadow: 0 4px 12px rgba(0,0,0,0.3); transition: all 0.3s; padding: 0; }
+        #theme-toggle:hover { transform: scale(1.1); border-color: var(--c-green); color: var(--c-green); }
         .icon-sun { display: none; }
         .icon-moon { display: block; }
         [data-theme="light"] .icon-sun { display: block; }
         [data-theme="light"] .icon-moon { display: none; }
 
         /* Light Mode */
-        [data-theme="light"] { --c-black: #ffffff; --c-darker-blue: #f8fafc; --c-dark-blue: #ffffff; --c-dark-gray: #ffffff; --c-white: #0f172a; --c-off-white: #334155; --c-muted: #64748b; --c-green: #1a5fa8; --c-green-glow: rgba(26,95,168,0.15); --c-purple: #1a1e24; }
+        [data-theme="light"] { --c-black: #ffffff; --c-darker-blue: transparent; --c-dark-blue: transparent; --c-dark-gray: rgba(255,255,255,0.8); --c-white: #0f172a; --c-off-white: #334155; --c-muted: #64748b; --c-green: #1a5fa8; --c-green-glow: rgba(26,95,168,0.15); --c-purple: #1a1e24; }
         [data-theme="light"] .navbar { background: rgba(255,255,255,0.95); border-bottom: 1px solid rgba(0,0,0,0.05); }
         [data-theme="light"] .navbar.scrolled { box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
         [data-theme="light"] .nav-link { color: #1e293b; }
@@ -268,7 +299,7 @@
         [data-theme="light"] .form-group input, [data-theme="light"] .form-group textarea, [data-theme="light"] .form-group select { background: #f8fafc; border-color: #cbd5e1; color: #0f172a; }
         [data-theme="light"] .form-group input:focus, [data-theme="light"] .form-group textarea:focus { background: #fff; }
         [data-theme="light"] .footer { background: #f1f5f9; border-top-color: rgba(0,0,0,0.06); }
-        [data-theme="light"] .hero { background: linear-gradient(135deg, #f0f7ff, #e8f0fe); }
+        [data-theme="light"] .hero { background: transparent; }
         [data-theme="light"] .hero::before { opacity: 0.3; }
         [data-theme="light"] .provider-header, [data-theme="light"] .path-step, [data-theme="light"] .stat-card { background: #f8fafc; border-color: rgba(0,0,0,0.06); }
         [data-theme="light"] .training { background: #f1f5f9; }
@@ -277,6 +308,16 @@
     </style>
 </head>
 <body>
+
+<!-- Video Background for all sessions -->
+<div class="video-bg-container">
+    <video class="bg-video video-dark" autoplay loop muted playsinline>
+        <source src="dark-bg.mp4" type="video/mp4">
+    </video>
+    <video class="bg-video video-light" autoplay loop muted playsinline>
+        <source src="light-bg.mp4" type="video/mp4">
+    </video>
+</div>
 
 <header class="navbar" id="header">
     <div class="nav-container">
@@ -1023,10 +1064,10 @@
 
 <button id="theme-toggle" aria-label="Basculer le thème">
     <span class="icon-sun">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
     </span>
     <span class="icon-moon">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
     </span>
 </button>
 
